@@ -1,0 +1,10 @@
+#Selects words with 4 letters or more, and makes all words in uppercase.
+old = open("words_10000.txt", "r")
+Lines = old.readlines()
+old.close()
+
+new = open("words_reduced.txt", "w")
+for Line in Lines:
+    if len(Line)>4:
+        new.write(Line.upper())
+new.close()
