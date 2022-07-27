@@ -18,11 +18,6 @@ for Line in Lines2:
     Words.append(Line.strip())
     Words.append(Line.strip()[::-1])
 
-for line in puzzle:
-    for word in Words:
-        if word in line:
-            pass
-
 flags =  [[False for i in range(width)] for j in range(height)]
 
 strings_to_check = []
